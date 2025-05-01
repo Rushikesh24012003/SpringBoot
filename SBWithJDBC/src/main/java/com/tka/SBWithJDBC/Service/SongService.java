@@ -1,5 +1,7 @@
 package com.tka.SBWithJDBC.Service;
 
+import java.util.ArrayList;
+
 import com.tka.SBWithJDBC.Dao.SongDao;
 import com.tka.SBWithJDBC.Entity.Song;
 
@@ -28,6 +30,10 @@ public class SongService {
 		 }else {
 			 System.out.println("Song not deleted.");
 		 }
+	 }
+	 
+	 public ArrayList<Song> getAllSongs(){
+		 return dao.getAllSongs();
 	 }
 
 }
